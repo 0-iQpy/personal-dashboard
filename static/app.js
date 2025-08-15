@@ -6,7 +6,7 @@ document.getElementById("log-task").addEventListener("click", function() {
     // Store the task data
     localStorage.setItem(taskName, JSON.stringify({ taskDuration, mood }));
 
-    // Provide AI-powered insights
+    // Provide AI-powered insights (for future update, I will integrate an ai)
     const insights = generateInsights(mood, taskDuration);
     document.getElementById("suggestions").innerText = insights;
 });
